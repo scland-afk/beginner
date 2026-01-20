@@ -24,6 +24,7 @@
     <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
 
     <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/services.css">
     <link rel="stylesheet" href="/css/dark.css">
 
@@ -37,34 +38,69 @@
     <!-- ============================================ -->
 
     <header id="cs-navigation">
-        <div class="cs-container">
-            <a href="/index.html" class="cs-logo" aria-label="back to home">
-                <img src="/assets/images/logo.png" alt="Serene Landscaping Logo" width="210" height="50" aria-hidden="true" decoding="async">
-            </a>
-            <nav class="cs-nav" role="navigation">
-                <button class="cs-toggle" aria-label="mobile menu toggle">
-                    <div class="cs-box" aria-hidden="true">
-                        <span class="cs-line cs-line1" aria-hidden="true"></span>
-                        <span class="cs-line cs-line2" aria-hidden="true"></span>
-                        <span class="cs-line cs-line3" aria-hidden="true"></span>
-                    </div>
-                </button>
-                <div class="cs-ul-wrapper">
-                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
-                        <li class="cs-li"><a href="/index.html" class="cs-li-link">Home</a></li>
-                        <li class="cs-li"><a href="/about.html" class="cs-li-link">About</a></li>
-                        <li class="cs-li"><a href="/services.html" class="cs-li-link cs-active">Services</a></li>
-                        <li class="cs-li"><a href="/portfolio.html" class="cs-li-link">Portfolio</a></li>
-                        <li class="cs-li"><a href="/reviews.html" class="cs-li-link">Reviews</a></li>
-                        <li class="cs-li"><a href="/contact.html" class="cs-li-link">Contact</a></li>
-                    </ul>
+        <!-- Top Bar -->
+        <div class="cs-top-bar">
+            <div class="cs-top-container">
+                <div class="cs-top-social">
+                    <a href="https://www.facebook.com/serenelandscapes" class="cs-social-link" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+                    </a>
+                    <a href="https://www.instagram.com/serenelandscapes" class="cs-social-link" target="_blank" rel="noopener" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+                    </a>
+                    <a href="https://www.google.com/maps/place/Serene+Construction+Landscaping" class="cs-social-link" target="_blank" rel="noopener" aria-label="Google">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 512"><path d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"/></svg>
+                    </a>
                 </div>
-            </nav>
-            <a href="/contact.html" class="cs-button-solid cs-nav-button">Get a Quote</a>
-            <button id="dark-mode-toggle" aria-label="dark mode toggle">
-                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
-                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="sun" width="15" height="15">
-            </button>
+                <div class="cs-top-contact">
+                    <span class="cs-top-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg>
+                        Edmonton, AB & Surrounding Areas
+                    </span>
+                    <span class="cs-top-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>
+                        M-F: 8:00am - 6:00pm
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Navigation Bar -->
+        <div class="cs-main-bar">
+            <div class="cs-main-container">
+                <a href="/index.html" class="cs-logo" aria-label="back to home">
+                    <img src="/assets/images/logo.png" alt="Serene Landscaping" width="200" height="50">
+                </a>
+                
+                <nav class="cs-nav" role="navigation">
+                    <button class="cs-toggle" aria-label="mobile menu toggle">
+                        <div class="cs-box">
+                            <span class="cs-line cs-line1"></span>
+                            <span class="cs-line cs-line2"></span>
+                            <span class="cs-line cs-line3"></span>
+                        </div>
+                    </button>
+                    
+                    <div class="cs-ul-wrapper">
+                        <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                            <li class="cs-li"><a href="/index.html" class="cs-li-link">Home</a></li>
+                            <li class="cs-li"><a href="/about.html" class="cs-li-link">About</a></li>
+                            <li class="cs-li"><a href="/services.html" class="cs-li-link cs-active">Services</a></li>
+                            <li class="cs-li"><a href="/portfolio.html" class="cs-li-link">Portfolio</a></li>
+                            <li class="cs-li"><a href="/reviews.html" class="cs-li-link">Reviews</a></li>
+                            <li class="cs-li"><a href="/contact.html" class="cs-li-link">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cs-contact-group">
+                        <a href="/contact.html" class="cs-cta-btn">Get a Quote</a>
+                        <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                            <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                            <img class="cs-sun" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" alt="sun" width="15" height="15">
+                        </button>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -78,9 +114,9 @@
                 <span class="cs-int-title">Our Services</span>
             </div>
             <picture class="cs-background">
-                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=600&q=80">
-                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80" alt="Beautiful landscaped garden" width="1280" height="568" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/front-yard-landscaping.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/front-yard-landscaping.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/front-yard-landscaping.webp" alt="Beautiful landscaped garden" width="1280" height="568" aria-hidden="true">
             </picture>
         </div>
 
@@ -100,7 +136,7 @@
                 <ul class="cs-card-group">
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80" alt="Landscape design" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/front-yard-landscaping.webp" alt="Landscape design" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Landscape Design & Construction</h3>
@@ -111,7 +147,7 @@
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1592722182431-e4f11e15c10a?w=600&q=80" alt="Lawn maintenance" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/lawn-mowing.jpg" alt="Lawn maintenance" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Lawn Maintenance</h3>
@@ -122,29 +158,29 @@
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1516912481808-3406841bd33c?w=600&q=80" alt="Snow removal" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/snow-removal-commercial.jpg" alt="Snow removal" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Snow Removal</h3>
                             <p class="cs-item-text">
-                                Edmonton winters are unpredictable. We offer residential and commercial snow plowing, blowing, sanding, and ice control. Seasonal contracts and on-demand services available.
+                                Edmonton winters require dependable snow clearing. We provide residential and commercial snow removal services to keep your property safe and accessible throughout the winter months.
                             </p>
                         </div>
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Patios and hardscaping" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/patio-firepit.webp" alt="Patios and retaining walls" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Patios & Retaining Walls</h3>
                             <p class="cs-item-text">
-                                Transform your outdoor space with beautiful hardscaping. We design and install patios, walkways, and retaining walls using quality materials for lasting results and proper drainage.
+                                From simple patios to multi-level outdoor living spaces with retaining walls, we design and build hardscape features that add beauty and function to your property.
                             </p>
                         </div>
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Fence installation" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/cedar-fence.jpg" alt="Fences and gates" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Fences & Gates</h3>
@@ -155,7 +191,7 @@
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=600&q=80" alt="Final grading" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/landscape-1.webp" alt="Final grading" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Final Grading</h3>
@@ -166,7 +202,7 @@
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1598902108854-10e335adac99?w=600&q=80" alt="Tree services" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/landscape-1.webp" alt="Tree services" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Tree Services</h3>
@@ -177,7 +213,7 @@
                     </li>
                     <li class="cs-item">
                         <picture class="cs-picture">
-                            <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&q=80" alt="Commercial landscaping" width="400" height="300">
+                            <img loading="lazy" decoding="async" src="/assets/images/commercial-landscaping.jpg" alt="Commercial landscaping" width="400" height="300">
                         </picture>
                         <div class="cs-info">
                             <h3 class="cs-h3">Commercial Services</h3>
@@ -206,9 +242,9 @@
                 </div>
             </div>
             <picture class="cs-picture">
-                <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80">
-                <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80">
-                <img loading="lazy" decoding="async" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80" alt="Beautiful backyard landscape" width="1920" height="1280" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/patio-firepit.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/patio-firepit.webp">
+                <img loading="lazy" decoding="async" src="/assets/images/patio-firepit.webp" alt="Beautiful backyard landscape" width="1920" height="1280" aria-hidden="true">
             </picture>
         </section>                                          
     </main>
@@ -220,12 +256,8 @@
     <footer id="cs-footer-269">
         <div class="cs-container">
             <div class="cs-logo-group">
-                <a aria-label="go back to home" class="cs-logo" href="/index.html">
-                    <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.png" alt="Serene Landscaping Logo" width="240" height="57">
-                </a>
-                <p class="cs-text">
-                    Serene Construction Landscaping is Edmonton's trusted choice for professional landscaping, lawn care, and snow removal services. Design, durability, and detail in every project.
-                </p>
+                <a class="cs-logo" href="/index.html"><img class="cs-logo-img" loading="lazy" decoding="async" src="/assets/images/logo.png" alt="Serene Landscaping Logo" width="240" height="57"></a>
+                <p class="cs-text">Serene Construction Landscaping is Edmonton's trusted choice for professional landscaping, lawn care, and snow removal services. Design, durability, and detail in every project.</p>
             </div>
             <ul class="cs-nav">
                 <li class="cs-nav-li"><span class="cs-header">Sitemap</span></li>
@@ -247,19 +279,6 @@
                 <li class="cs-nav-li"><span class="cs-header">Contact</span></li>
                 <li class="cs-contact-li"><a class="cs-contact-link" href="mailto:info@serenelandscapes.ca">info@serenelandscapes.ca</a></li>
                 <li class="cs-contact-li">Edmonton, AB & Surrounding Areas</li>
-                <li class="cs-contact-li cs-social-group">
-                    <div class="cs-social">
-                        <a class="cs-social-link" aria-label="visit google profile" href="https://www.google.com/maps/place/Serene+Construction+Landscaping" target="_blank" rel="noopener">
-                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
-                        </a>
-                        <a class="cs-social-link" aria-label="visit facebook profile" href="https://www.facebook.com/serenelandscapes" target="_blank" rel="noopener">
-                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
-                        </a>
-                        <a class="cs-social-link" aria-label="visit instagram profile" href="https://www.instagram.com/serenelandscapes" target="_blank" rel="noopener">
-                            <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
-                        </a>
-                    </div>
-                </li>
             </ul>
         </div>
     </footer>
