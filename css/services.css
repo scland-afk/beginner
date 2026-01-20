@@ -59,14 +59,14 @@
 }
 
 /*-- -------------------------- -->
-<---          Reviews           -->
+<---         Services           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #reviews-399 {
+  #services-340 {
     padding: var(--sectionPadding);
   }
-  #reviews-399 .cs-container {
+  #services-340 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -75,92 +75,157 @@
     align-items: center;
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #reviews-399 .cs-content {
+  #services-340 .cs-content {
     text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  #reviews-399 .cs-card-group {
+  #services-340 .cs-card-group {
     width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
-  #reviews-399 .cs-item {
+  #services-340 .cs-item {
     list-style: none;
     width: 100%;
-    padding: clamp(1.5rem, 4vw, 2.5rem);
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 1rem;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: relative;
+    z-index: 1;
+    transition: box-shadow 0.3s, transform 0.3s;
   }
-  #reviews-399 .cs-icon {
-    width: 2.5rem;
-    height: auto;
+  #services-340 .cs-item:hover {
+    box-shadow: rgba(149, 157, 165, 0.3) 0px 12px 32px;
   }
-  #reviews-399 .cs-h3 {
+  #services-340 .cs-picture {
+    width: 100%;
+    height: 15rem;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  #services-340 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.6s;
+  }
+  #services-340 .cs-item:hover .cs-picture img {
+    transform: scale(1.1);
+  }
+  #services-340 .cs-info {
+    padding: 1.5rem;
+  }
+  #services-340 .cs-h3 {
     font-size: 1.25rem;
     font-weight: 700;
     line-height: 1.2em;
-    margin: 0;
+    margin: 0 0 0.75rem;
     color: var(--headerColor);
   }
-  #reviews-399 .cs-item-text {
+  #services-340 .cs-item-text {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
-  }
-  #reviews-399 .cs-name {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.5em;
-    margin-top: auto;
-    color: var(--headerColor);
-    display: block;
-  }
-  #reviews-399 .cs-location {
-    font-size: 0.875rem;
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #reviews-399 .cs-button-solid {
-    margin-top: 1rem;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #reviews-399 .cs-card-group {
+  #services-340 .cs-card-group {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #reviews-399 .cs-card-group {
+  #services-340 .cs-card-group {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews-399 .cs-item {
+  body.dark-mode #services-340 .cs-item {
     background-color: var(--medium);
   }
-  body.dark-mode #reviews-399 .cs-h3,
-  body.dark-mode #reviews-399 .cs-name {
+  body.dark-mode #services-340 .cs-h3 {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews-399 .cs-item-text,
-  body.dark-mode #reviews-399 .cs-location {
+  body.dark-mode #services-340 .cs-item-text {
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
+  }
+}
+
+/*-- -------------------------- -->
+<---            CTA             -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #cta-51 {
+    padding: var(--sectionPadding);
+    position: relative;
+    z-index: 1;
+  }
+  #cta-51 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  #cta-51 .cs-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #cta-51 .cs-topper {
+    color: var(--secondary);
+  }
+  #cta-51 .cs-title {
+    color: #fff;
+  }
+  #cta-51 .cs-text {
+    color: #fff;
+    opacity: 0.8;
+    margin-bottom: 2rem;
+  }
+  #cta-51 .cs-picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta-51 .cs-picture:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cta-51 .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 }
