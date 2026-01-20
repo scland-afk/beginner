@@ -32,29 +32,40 @@ for (const item of dropDowns) {
     item.addEventListener('click', onClick)
 }
 
+// after scrolling down 100px, add .scroll class to the #cs-navigation
+document.addEventListener('scroll', (e) => { 
+    const scroll = document.documentElement.scrollTop;
+    if(scroll >= 100){
+        document.querySelector('#cs-navigation').classList.add('scroll')
+    } else {
+        document.querySelector('#cs-navigation').classList.remove('scroll')
+    }
+});
+
 // Dark mode toggle
-const $btn = window['dark-mode-toggle']
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const bodyClassList = document.body.classList;
+const storageKey = 'isDarkModeEnabled';
 
-const bodyClassList = document.body.classList
-const storageKey = 'isDarkModeEnabled'
+let isEnabled = localStorage.getItem(storageKey);
 
-let isEnabled = localStorage.getItem(storageKey)
-
-const update = () => {
-    bodyClassList.toggle('dark-mode', isEnabled)
+const updateDarkMode = () => {
+    bodyClassList.toggle('dark-mode', isEnabled);
 }
 
-const save = () => {
-    if (isEnabled) localStorage.setItem(storageKey, true)
-    else localStorage.removeItem(storageKey)
+const saveDarkMode = () => {
+    if (isEnabled) localStorage.setItem(storageKey, true);
+    else localStorage.removeItem(storageKey);
 }
 
-const toggle = () => {
-    isEnabled = !isEnabled
-    update()
-    save()
+const toggleDarkMode = () => {
+    isEnabled = !isEnabled;
+    updateDarkMode();
+    saveDarkMode();
 }
 
-update()
+updateDarkMode();
 
-$btn.addEventListener('click', toggle)
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+}
