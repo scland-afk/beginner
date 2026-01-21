@@ -162,3 +162,24 @@
     color: var(--headerColor);
   }
 }
+
+/* Desktop - 1024px - Make gallery images wider and taller */
+@media only screen and (min-width: 64rem) {
+  #gallery-45 .cs-gallery-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  #gallery-45 .cs-image {
+    height: 25rem;
+  }
+}
+
+/* Large Desktop - Make even wider */
+@media only screen and (min-width: 80rem) {
+  #gallery-45 .cs-gallery-wrapper {
+    gap: 2rem;
+  }
+  #gallery-45 .cs-image {
+    height: 28rem;
+  }
+}
