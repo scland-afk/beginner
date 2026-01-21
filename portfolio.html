@@ -106,7 +106,6 @@
                     </div>
                 </div>
                 <div class="cs-gallery-wrapper">
-                <div class="cs-gallery-wrapper">
                     <!-- LANDSCAPE DESIGN (7 images) -->
                     <picture class="cs-gallery cs-image" data-category="landscape">
                         <img loading="lazy" decoding="async" src="/assets/images/projects/front-yard-landscape-design-mulch-shrubs-edmonton.webp" alt="Front yard landscape design with mulch and shrubs in Edmonton" width="400" height="300">
@@ -192,7 +191,6 @@
                     </picture>
                 </div>
 
-                </div>
             </div>
         </section>
     </main>
@@ -229,7 +227,7 @@
             </ul>
             <ul class="cs-contact">
                 <li class="cs-nav-li"><span class="cs-header">Contact</span></li>
-                <li class="cs-contact-li"><a class="cs-contact-link" href="mailto:info@serenelandscapes.ca">info@serenelandscapes.ca</a></li>
+                <li class="cs-contact-li"><a class="cs-contact-link" href="/cdn-cgi/l/email-protection#4d24232b220d3e283f282328212c23293e2e2c3d283e632e2c"><span class="__cf_email__" data-cfemail="82ebece4edc2f1e7f0e7ece7eee3ece6f1e1e3f2e7f1ace1e3">[email&#160;protected]</span></a></li>
                 <li class="cs-contact-li">Edmonton, AB & Surrounding Areas</li>
                 <li class="cs-contact-li cs-social-group">
                     <div class="cs-social">
@@ -248,7 +246,7 @@
         </div>
     </footer>
 
-    <script defer src="/assets/js/nav.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script defer src="/assets/js/nav.js"></script>
     <script>
         class CS_GalleryFilter {
             filtersSelector = '.cs-button'
@@ -278,13 +276,4 @@
             filter(filter) {
                 const showAll = filter == 'all'
                 const { hiddenClass } = this
-                for (const $gallery of this.$galleries) {
-                    const show = showAll || $gallery.dataset.category == filter
-                    $gallery.classList.toggle(hiddenClass, !show)
-                }
-            }
-        }
-        new CS_GalleryFilter()
-    </script>
-</body>
-</html>
+                for (const $gallery of this.$galleries
