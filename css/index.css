@@ -153,16 +153,11 @@
   }
   #h-services-81 .cs-icon {
     width: 3.25rem;
-    height: 3.25rem;
+    height: auto;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--primary);
-  }
-  #h-services-81 .cs-icon svg {
-    width: 100%;
-    height: auto;
   }
   #h-services-81 .cs-icon img {
     width: 100%;
