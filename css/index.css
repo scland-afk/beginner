@@ -553,3 +553,56 @@
     object-fit: cover;
   }
 }
+
+
+@media only screen and (min-width: 48rem) {
+  #gallery-45 .cs-image {
+    height: 18rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #gallery-45 .cs-image {
+    height: 20rem;
+  }
+}
+
+/* Override homepage gallery to match portfolio style - SQUARE IMAGES */
+@media only screen and (min-width: 0rem) {
+  #gallery-45 .cs-gallery-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  #gallery-45 .cs-image {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%; /* Makes it square */
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #gallery-45 .cs-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 48rem) {
+  #gallery-45 .cs-gallery-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 64rem) {
+  #gallery-45 .cs-gallery-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
